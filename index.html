@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentSphere | Student Blog Platform</title>
+    <meta
+      name="description"
+      content="A modern student blog platform featuring study tips, campus life, tech, and career advice."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <a href="#" class="brand" aria-label="StudentSphere home">
+            <span class="brand-mark">S</span>
+            <span>StudentSphere</span>
+          </a>
+
+          <nav class="nav" aria-label="Main navigation">
+            <a href="#featured">Featured</a>
+            <a href="#latest">Latest</a>
+            <a href="#categories">Categories</a>
+            <a href="#newsletter">Newsletter</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="search-btn" aria-label="Search posts">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 015.91 13.39l4.4 4.4 1.41-1.41-4.4-4.4A8 8 0 1110 2zm0 2a6 6 0 104.24 10.24A6 6 0 0010 4z"/></svg>
+            </button>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+              <span class="icon-sun">☀️</span>
+            </button>
+            <button class="menu-toggle" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-copy">
+            <span class="eyebrow">Study smarter, live brighter</span>
+            <h1>Fresh ideas for students who want more from campus life.</h1>
+            <p>
+              Discover practical advice, study hacks, career tips, and inspiring stories designed
+              for young learners and future leaders.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#latest">Read articles</a>
+              <a class="btn btn-secondary" href="#newsletter">Join newsletter</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Student metrics">
+              <li><strong>12k+</strong><span>student readers</span></li>
+              <li><strong>180+</strong><span>articles</span></li>
+              <li><strong>42</strong><span>campus topics</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Featured article card">
+            <div class="feature-badge">Featured story</div>
+            <div class="feature-image">
+              <span>🎓</span>
+            </div>
+            <div class="feature-content">
+              <p class="meta">Study Tips • 5 min read</p>
+              <h2>7 proven habits that help students stay productive without burning out</h2>
+              <a href="#latest">Explore the article</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="container section-block" id="featured">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow subtle">Editor’s picks</span>
+              <h2>Featured articles</h2>
+            </div>
+            <a href="#latest" class="text-link">See all posts</a>
+          </div>
+
+          <div class="featured-grid">
+            <article class="post-card featured-post">
+              <div class="post-thumb gradient-one">📚</div>
+              <div class="post-body">
+                <div class="post-meta"><span>Academics</span><span>4 min read</span></div>
+                <h3>How to build a realistic study timetable that actually works</h3>
+                <p>
+                  Create a plan that fits your classes, assignment deadlines, and rest time without
+                  crushing your energy.
+                </p>
+              </div>
+            </article>
+
+            <article class="post-card featured-post">
+              <div class="post-thumb gradient-two">💡</div>
+              <div class="post-body">
+                <div class="post-meta"><span>Growth</span><span>6 min read</span></div>
+                <h3>The student mindset shift that makes learning feel easier</h3>
+                <p>
+                  Learn how curiosity and consistency can replace stress and perfectionism in your
+                  academic journey.
+                </p>
+              </div>
+            </article>
+
+            <article class="post-card featured-post">
+              <div class="post-thumb gradient-three">🚀</div>
+              <div class="post-body">
+                <div class="post-meta"><span>Career</span><span>7 min read</span></div>
+                <h3>What to do in your first year to prepare for internships and jobs</h3>
+                <p>
+                  Small actions taken early can lead to strong portfolios, better networking, and bigger
+                  opportunities later.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="container section-block" id="categories">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow subtle">Explore</span>
+              <h2>Popular topics</h2>
+            </div>
+          </div>
+
+          <div class="category-cloud" aria-label="Blog categories">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="academics">Academics</button>
+            <button class="chip" data-filter="career">Career</button>
+            <button class="chip" data-filter="wellbeing">Wellbeing</button>
+            <button class="chip" data-filter="tech">Tech</button>
+            <button class="chip" data-filter="campus-life">Campus Life</button>
+          </div>
+        </section>
+
+        <section class="container section-block" id="latest">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow subtle">Latest</span>
+              <h2>Fresh from the blog</h2>
+            </div>
+          </div>
+
+          <div class="blog-grid" id="blogGrid">
+            <article class="blog-card" data-category="academics">
+              <div class="blog-image gradient-one">✍️</div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Academics</span><span>3 min read</span></div>
+                <h3>5 ways to turn revision notes into memory-friendly summaries</h3>
+                <p>Short, structured notes can help you remember more than long pages of copied text.</p>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="career">
+              <div class="blog-image gradient-two">💼</div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Career</span><span>5 min read</span></div>
+                <h3>What employers look for in student portfolios</h3>
+                <p>It is not about having everything—it is about showing curiosity, growth, and initiative.</p>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="wellbeing">
+              <div class="blog-image gradient-three">🧠</div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Wellbeing</span><span>4 min read</span></div>
+                <h3>How to stay focused when your mind feels overloaded</h3>
+                <p>Small routines and intentional breaks can improve concentration without adding stress.</p>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="tech">
+              <div class="blog-image gradient-four">💻</div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Tech</span><span>6 min read</span></div>
+                <h3>Student-friendly productivity tools you should actually use</h3>
+                <p>Choose apps that reduce friction, not just ones with the most features and keywords.</p>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="campus-life">
+              <div class="blog-image gradient-five">🏫</div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Campus Life</span><span>4 min read</span></div>
+                <h3>How to make new friends in college without forcing it</h3>
+                <p>Finding your people often starts with practical routines, shared spaces, and repeated contact.</p>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="academics">
+              <div class="blog-image gradient-six">🧪</div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Academics</span><span>8 min read</span></div>
+                <h3>A smarter way to prepare before exams: from panic to progress</h3>
+                <p>Start with retrieval, not rereading. Learn how to revise with purpose and confidence.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="container section-block" id="newsletter">
+          <div class="newsletter-box">
+            <div>
+              <span class="eyebrow">Weekly digest</span>
+              <h2>Get student insights in your inbox.</h2>
+            </div>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" aria-label="Email address" />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <div>
+            <a href="#" class="brand footer-brand">
+              <span class="brand-mark">S</span>
+              <span>StudentSphere</span>
+            </a>
+          </div>
+          <p>© 2026 StudentSphere. Built for curious students.</p>
+          <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
